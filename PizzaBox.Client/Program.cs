@@ -6,7 +6,7 @@ namespace PizzaBox.Client
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcom to PizzaBox");
+            Console.WriteLine("Welcome to PizzaBox");
         }
     }
 }
