@@ -1,0 +1,16 @@
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Client
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Client.deps.json
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Client.runtimeconfig.json
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Client.runtimeconfig.dev.json
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Client.dll
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/ref/PizzaBox.Client.dll
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Client.pdb
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.csprojAssemblyReference.cache
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.GeneratedMSBuildEditorConfig.editorconfig
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.AssemblyInfoInputs.cache
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.AssemblyInfo.cs
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.csproj.CoreCompileInputs.cache
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.dll
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/ref/PizzaBox.Client.dll
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.pdb
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.genruntimeconfig.cache
