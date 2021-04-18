@@ -25,6 +25,117 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj": {
+                "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj"
+              },
+              "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj": {
+                "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
+        "projectName": "PizzaBox.Domain",
+        "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
+        "packagesPath": "/home/akovi/.nuget/packages/",
+        "outputPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/akovi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj",
+        "projectName": "PizzaBox.Storing",
+        "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj",
+        "packagesPath": "/home/akovi/.nuget/packages/",
+        "outputPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/akovi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },

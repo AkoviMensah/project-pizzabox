@@ -14,3 +14,8 @@
 /home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/ref/PizzaBox.Client.dll
 /home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.pdb
 /home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.genruntimeconfig.cache
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Domain.dll
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Storing.dll
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Storing.pdb
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/bin/Debug/net5.0/PizzaBox.Domain.pdb
+/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/Debug/net5.0/PizzaBox.Client.csproj.CopyComplete
