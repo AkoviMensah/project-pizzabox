@@ -12,7 +12,7 @@ namespace PizzaBox.Domain.Abstracts
   [XmlInclude(typeof(CustomPizza))]
   [XmlInclude(typeof(MeatPizza))]
   [XmlInclude(typeof(VeggiePizza))]
-  public abstract class APizza
+  public abstract class APizza : AModel
   {
     public Crust Crust { get; set; }
     public Size Size { get; set; }

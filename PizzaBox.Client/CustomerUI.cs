@@ -101,5 +101,12 @@ namespace PizzaBox.Client
 
       return _storeSingleton.Stores[input - 1];
     }
+
+    private static void PrintMenu()
+    {
+      Console.WriteLine("1 -- Add a new pizza to order");
+      Console.WriteLine("2 -- Remove a pizza from order");
+      Console.WriteLine("3 -- View order history");
+    }
   }
 }
