@@ -16,7 +16,7 @@ namespace PizzaBox.Client
       if (input == 1)
       {
         CustomerUI customerUI = new CustomerUI();
-        customerUI.Run();
+        customerUI.Start();
       }
     }
   }

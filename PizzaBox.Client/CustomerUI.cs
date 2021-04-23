@@ -16,15 +16,20 @@ namespace PizzaBox.Client
     /// <summary>
     /// 
     /// </summary>
+    public Order order;
+    
     public void Run()
     {
-      var order = new Order();
+      order = new Order();
 
       PrintStoreList();
 
       order.Customer = new Customer();
       order.Store = SelectStore();
       order.Pizza = SelectPizza();
+      Checkout();
+      //////////////////////Save to database
+      Start();
     }
 
     /// <summary>
@@ -102,11 +107,53 @@ namespace PizzaBox.Client
       return _storeSingleton.Stores[input - 1];
     }
 
-    private static void PrintMenu()
+    private void PrintMenu()
     {
-      Console.WriteLine("1 -- Add a new pizza to order");
+      Console.WriteLine("1 -- Start a new order");
       Console.WriteLine("2 -- Remove a pizza from order");
       Console.WriteLine("3 -- View order history");
+    }
+
+    public void Start()
+    {
+      PrintMenu();
+      var valid = int.TryParse(Console.ReadLine(), out int input);
+
+      if (input == 1) Run();
+      else if (input == 2) RemovePizza();
+      else 
+      {
+        Console.WriteLine("Invalid input");
+        Start();
+      }
+    }
+
+    private void RemovePizza()
+    {
+      try
+      {
+        order.Pizza = null;
+        Run();
+      }catch(Exception)
+      {
+        Console.WriteLine("You have no pizza to remove from order");
+        Start();
+      }
+    }
+
+    private void Checkout()
+    {
+      Console.WriteLine("1 -- Checkout and place order");
+      Console.WriteLine("2 -- Edit the Pizza");
+      Console.WriteLine("3 -- Edit order / View order history");
+      
+      var valid = int.TryParse(Console.ReadLine(), out int input);
+      if(input == 3) Start();
+      else if (input == 1) 
+      {
+        Console.WriteLine("Your order is placed");
+        order = null;
+      }
     }
   }
 }
