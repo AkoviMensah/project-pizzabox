@@ -58,17 +58,17 @@ namespace PizzaBox.Storing
 
       builder.Entity<Customer>().HasKey(e => e.EntityId);
 
-      // builder.Entity<Size>().HasMany<APizza>().WithOne(); // orm is creating the has
+       //builder.Entity<Size>().HasMany<APizza>().WithOne(); // orm is creating the has
       // builder.Entity<APizza>().HasOne<Size>().WithMany();
 
       builder.Entity<ChicagoStore>().HasData(new ChicagoStore[]
       {
-        new ChicagoStore() { EntityId = 1, Name = "Chitown Main Street" }
+        new ChicagoStore() { EntityId = 1, Name = "Papajohn" }
       });
 
       builder.Entity<NewYorkStore>().HasData(new NewYorkStore[]
       {
-        new NewYorkStore() { EntityId = 2, Name = "Big Apple" }
+        new NewYorkStore() { EntityId = 2, Name = "Papamurphy" }
       });
 
       builder.Entity<Customer>().HasData(new Customer[]
