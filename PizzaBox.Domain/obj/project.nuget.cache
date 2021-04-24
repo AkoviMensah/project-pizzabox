@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c+PaHe1H6nDGOUbURs0xZkzZ5UcJ+fDbMH7SEnOszKqvBGlcMKE1qUziIdUJZL5WqcuVP4HzFgs0KF9k8Pir4Q==",
+  "dgSpecHash": "2GpdU+Vu8FwTRUq1batFpGIxnr0Ad6oGg07yLyfuHffPsDavSv6Afe7xcRG8l+xhksijCLB7KJD5XkTjXNQ+rQ==",
   "success": true,
-  "projectFilePath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
+  "projectFilePath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

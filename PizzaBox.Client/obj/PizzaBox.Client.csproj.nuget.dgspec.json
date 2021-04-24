@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj": {}
+    "/home/akovi/revature/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj": {}
   },
   "projects": {
-    "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj": {
+    "/home/akovi/revature/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj",
+        "projectUniqueName": "/home/akovi/revature/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj",
         "projectName": "PizzaBox.Client",
-        "projectPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj",
+        "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj",
         "packagesPath": "/home/akovi/.nuget/packages/",
-        "outputPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Client/obj/",
+        "outputPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/akovi/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj": {
-                "projectPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj"
+              "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj": {
+                "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj"
               },
-              "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj": {
-                "projectPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj"
+              "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj": {
+                "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj": {
+    "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
+        "projectUniqueName": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
         "projectName": "PizzaBox.Domain",
-        "projectPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
+        "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
         "packagesPath": "/home/akovi/.nuget/packages/",
-        "outputPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/obj/",
+        "outputPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/akovi/.nuget/NuGet/NuGet.Config"
@@ -131,14 +131,14 @@
         }
       }
     },
-    "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj": {
+    "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj",
+        "projectUniqueName": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj",
         "projectName": "PizzaBox.Storing",
-        "projectPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj",
+        "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/PizzaBox.Storing.csproj",
         "packagesPath": "/home/akovi/.nuget/packages/",
-        "outputPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Storing/obj/",
+        "outputPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Storing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/akovi/.nuget/NuGet/NuGet.Config"
@@ -169,7 +169,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-<<<<<<< HEAD
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -178,8 +177,6 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
-=======
->>>>>>> 22710051ed57b159624d5ab93ff224d9316f003d
             "microsoft.entityframeworkcore.design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

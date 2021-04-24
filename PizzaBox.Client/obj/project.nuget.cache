@@ -1,33 +1,21 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "QzVvsSWk3+gIA2eVfERxEbuZl8GiCqy+ax/CLwG3n46GPt7iHeLmvqWv4PLdmCQjq1ofTvYYH9zog1bROitZag==",
   "success": true,
   "projectFilePath": "/home/akovi/revature/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj",
   "expectedPackageFiles": [
     "/home/akovi/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
-=======
-  "dgSpecHash": "WPPzIMS2l9B+4Bn6yJiCEnO66mv6GEeibXt4Z8JhqsK9mK4GLgMzOJRUNCix4ovFVkTyO/MzaZlBxTCngaTU+w==",
-  "success": true,
-  "projectFilePath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Client/PizzaBox.Client.csproj",
-  "expectedPackageFiles": [
-    "/home/akovi/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
->>>>>>> 22710051ed57b159624d5ab93ff224d9316f003d
     "/home/akovi/.nuget/packages/microsoft.data.sqlclient/2.0.1/microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.0.1/microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.entityframeworkcore/5.0.5/microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.5/microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.5/microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
-<<<<<<< HEAD
     "/home/akovi/.nuget/packages/microsoft.entityframeworkcore.design/5.0.5/microsoft.entityframeworkcore.design.5.0.5.nupkg.sha512",
-=======
->>>>>>> 22710051ed57b159624d5ab93ff224d9316f003d
     "/home/akovi/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.5/microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.entityframeworkcore.sqlserver/5.0.5/microsoft.entityframeworkcore.sqlserver.5.0.5.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
-<<<<<<< HEAD
     "/home/akovi/.nuget/packages/microsoft.extensions.configuration/5.0.0/microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.configuration.fileextensions/5.0.0/microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
@@ -38,11 +26,6 @@
     "/home/akovi/.nuget/packages/microsoft.extensions.fileproviders.abstractions/5.0.0/microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.fileproviders.physical/5.0.0/microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.filesystemglobbing/5.0.0/microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
-=======
-    "/home/akovi/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
-    "/home/akovi/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
-    "/home/akovi/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
->>>>>>> 22710051ed57b159624d5ab93ff224d9316f003d
     "/home/akovi/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/home/akovi/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
