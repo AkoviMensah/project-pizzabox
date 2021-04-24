@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
+      "projectUniqueName": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
       "projectName": "PizzaBox.Domain",
-      "projectPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
+      "projectPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/PizzaBox.Domain.csproj",
       "packagesPath": "/home/akovi/.nuget/packages/",
-      "outputPath": "/home/akovi/revature/project-pizzabox/PizzaBox.Domain/obj/",
+      "outputPath": "/home/akovi/revature/pass/project-pizzabox/PizzaBox.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/akovi/.nuget/NuGet/NuGet.Config"
