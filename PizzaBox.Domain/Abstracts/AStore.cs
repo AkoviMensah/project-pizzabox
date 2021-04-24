@@ -11,7 +11,7 @@ namespace PizzaBox.Domain.Abstracts
   /// </summary>
   [XmlInclude(typeof(ChicagoStore))]
   [XmlInclude(typeof(NewYorkStore))]
-  public abstract class AStore : Object
+  public abstract class AStore : AModel
   {
     public string Name { get; set; }
     public List<Order> Orders { get; set; }
