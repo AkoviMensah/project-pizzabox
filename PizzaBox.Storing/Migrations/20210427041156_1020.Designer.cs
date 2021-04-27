@@ -10,8 +10,8 @@ using PizzaBox.Storing;
 namespace PizzaBox.Storing.Migrations
 {
     [DbContext(typeof(PizzaBoxContext))]
-    [Migration("20210424165617_3")]
-    partial class _3
+    [Migration("20210427041156_1020")]
+    partial class _1020
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -209,7 +209,7 @@ namespace PizzaBox.Storing.Migrations
                         new
                         {
                             EntityId = 1L,
-                            Name = "Chitown Main Street"
+                            Name = "Papajohn"
                         });
                 });
 
@@ -223,7 +223,7 @@ namespace PizzaBox.Storing.Migrations
                         new
                         {
                             EntityId = 2L,
-                            Name = "Big Apple"
+                            Name = "Papamurphy"
                         });
                 });
 

@@ -10,8 +10,8 @@ using PizzaBox.Storing;
 namespace PizzaBox.Storing.Migrations
 {
     [DbContext(typeof(PizzaBoxContext))]
-    [Migration("20210424182731_4")]
-    partial class _4
+    [Migration("20210426160825_8")]
+    partial class _8
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -101,13 +101,6 @@ namespace PizzaBox.Storing.Migrations
                     b.HasKey("EntityId");
 
                     b.ToTable("Customers");
-
-                    b.HasData(
-                        new
-                        {
-                            EntityId = 1L,
-                            Name = "Uncle John"
-                        });
                 });
 
             modelBuilder.Entity("PizzaBox.Domain.Models.Order", b =>
@@ -134,7 +127,13 @@ namespace PizzaBox.Storing.Migrations
 
                     b.HasIndex("StoreEntityId");
 
-                    b.ToTable("Order");
+                    b.ToTable("Orders");
+
+                    b.HasData(
+                        new
+                        {
+                            EntityId = 1L
+                        });
                 });
 
             modelBuilder.Entity("PizzaBox.Domain.Models.Size", b =>
@@ -204,13 +203,6 @@ namespace PizzaBox.Storing.Migrations
                     b.HasBaseType("PizzaBox.Domain.Abstracts.AStore");
 
                     b.HasDiscriminator().HasValue("ChicagoStore");
-
-                    b.HasData(
-                        new
-                        {
-                            EntityId = 1L,
-                            Name = "Papajohn"
-                        });
                 });
 
             modelBuilder.Entity("PizzaBox.Domain.Models.Stores.NewYorkStore", b =>
@@ -218,13 +210,6 @@ namespace PizzaBox.Storing.Migrations
                     b.HasBaseType("PizzaBox.Domain.Abstracts.AStore");
 
                     b.HasDiscriminator().HasValue("NewYorkStore");
-
-                    b.HasData(
-                        new
-                        {
-                            EntityId = 2L,
-                            Name = "Papamurphy"
-                        });
                 });
 
             modelBuilder.Entity("PizzaBox.Domain.Abstracts.APizza", b =>

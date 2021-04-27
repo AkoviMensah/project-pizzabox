@@ -17,6 +17,7 @@ namespace PizzaBox.Storing
     public DbSet<AStore> Stores { get; set; }
     public DbSet<APizza> Pizzas { get; set; }
     public DbSet<Customer> Customers { get; set; }
+    public DbSet<Order> Orders { get; set; }
     public DbSet<Size> Sizes { get; set; }
 
     /// <summary>
@@ -58,23 +59,29 @@ namespace PizzaBox.Storing
 
       builder.Entity<Customer>().HasKey(e => e.EntityId);
 
-       //builder.Entity<Size>().HasMany<APizza>().WithOne(); // orm is creating the has
+      // builder.Entity<Size>().HasMany<APizza>().WithOne(); // orm is creating the has
       // builder.Entity<APizza>().HasOne<Size>().WithMany();
+
+      builder.Entity<AStore>().HasMany<Order>(s => s.Orders).WithOne(o => o.Store);
+      builder.Entity<Customer>().HasMany<Order>().WithOne(o => o.Customer);
+      builder.Entity<APizza>().HasMany<Order>().WithOne(o => o.Pizza);
+      // builder.Entity<Order>().HasOne<AStore>(o => o.Store).WithMany(s => s.Orders);
 
       builder.Entity<ChicagoStore>().HasData(new ChicagoStore[]
       {
-        new ChicagoStore() { EntityId = 1, Name = "Papajohn" }
+        new ChicagoStore() { EntityId = 1, Name = "PAPA JOHN" }
       });
 
       builder.Entity<NewYorkStore>().HasData(new NewYorkStore[]
       {
-        new NewYorkStore() { EntityId = 2, Name = "Papamurphy" }
+        new NewYorkStore() { EntityId = 2, Name = "LITTLE CEASAR" }
       });
 
       builder.Entity<Customer>().HasData(new Customer[]
       {
         new Customer() { EntityId = 1, Name = "Uncle John" }
       });
+
     }
   }
 }

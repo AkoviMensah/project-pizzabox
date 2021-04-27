@@ -2,7 +2,7 @@
 
 namespace PizzaBox.Storing.Migrations
 {
-    public partial class second : Migration
+    public partial class _108 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
