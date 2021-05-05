@@ -1,46 +1,47 @@
 using System.Collections.Generic;
 using System.Linq;
-using PizzaBox.Domain.Abstracts;
+using Microsoft.EntityFrameworkCore;
 using PizzaBox.Domain.Models;
-using PizzaBox.Domain.Models.Pizzas;
+using PizzaBox.Domain.Abstracts;
 using PizzaBox.Storing;
-using PizzaBox.Storing.Repositories;
 
-namespace PizzaBox.Client.Singletons
+public class CustomerSingleton
 {
-  /// <summary>
-  /// 
-  /// </summary>
-  public class CustomerSingleton
+  public readonly PizzaBoxContext _context;
+  private static CustomerSingleton _instance;
+  public List<Customer> Customers { get; }
+  public static CustomerSingleton Instance(PizzaBoxContext context)
   {
-    private static CustomerSingleton _instance;
-    private readonly PizzaBoxContext _context;
-
-    public List<Customer> Customers { get; set; }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="context"></param>
-    /// <returns></returns>
-    public static CustomerSingleton Instance(PizzaBoxContext context)
-    {
       if (_instance == null)
       {
         _instance = new CustomerSingleton(context);
       }
-
       return _instance;
-
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    private CustomerSingleton(PizzaBoxContext context)
+  }
+  private CustomerSingleton(PizzaBoxContext context)
+  {
+    _context = context;
+    if (Customers == null)
     {
-      _context = context;
       Customers = _context.Customers.ToList();
     }
+  }
+  public Customer AddCustomer(string name)
+  {
+    Customer customer = new Customer();
+    customer.Name = name;
+    _context.Customers.Add(customer);
+    return customer;
+  }
+  public Customer GetCustomer(string name)
+  {
+    foreach (Customer customer in _context.Customers)
+    {
+      if (customer.Name == name)
+      {
+        return customer;
+      }
+    }
+    return AddCustomer(name);
   }
 }

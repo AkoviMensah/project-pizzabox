@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PizzaBox.Storing;
 
 namespace PizzaBox.Storing.Migrations
 {
     [DbContext(typeof(PizzaBoxContext))]
-    partial class PizzaBoxContextModelSnapshot : ModelSnapshot
+    [Migration("20210504190054_migration1014")]
+    partial class migration1014
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,25 +97,25 @@ namespace PizzaBox.Storing.Migrations
                         {
                             EntityId = 1L,
                             Name = "Original",
-                            Price = 4.00m
+                            Price = 3.00m
                         },
                         new
                         {
                             EntityId = 2L,
                             Name = "Stuffed",
-                            Price = 4.00m
+                            Price = 3.00m
                         },
                         new
                         {
                             EntityId = 3L,
                             Name = "Thin",
-                            Price = 4.00m
+                            Price = 3.00m
                         },
                         new
                         {
                             EntityId = 4L,
                             Name = "Neapolitan",
-                            Price = 4.00m
+                            Price = 3.00m
                         });
                 });
 
@@ -130,6 +132,13 @@ namespace PizzaBox.Storing.Migrations
                     b.HasKey("EntityId");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            EntityId = 5L,
+                            Name = "Abalo"
+                        });
                 });
 
             modelBuilder.Entity("PizzaBox.Domain.Models.Order", b =>

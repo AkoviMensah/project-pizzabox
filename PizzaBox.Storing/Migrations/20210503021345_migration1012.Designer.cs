@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PizzaBox.Storing;
 
 namespace PizzaBox.Storing.Migrations
 {
     [DbContext(typeof(PizzaBoxContext))]
-    partial class PizzaBoxContextModelSnapshot : ModelSnapshot
+    [Migration("20210503021345_migration1012")]
+    partial class migration1012
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -95,25 +97,25 @@ namespace PizzaBox.Storing.Migrations
                         {
                             EntityId = 1L,
                             Name = "Original",
-                            Price = 4.00m
+                            Price = 1.00m
                         },
                         new
                         {
                             EntityId = 2L,
                             Name = "Stuffed",
-                            Price = 4.00m
+                            Price = 1.00m
                         },
                         new
                         {
                             EntityId = 3L,
                             Name = "Thin",
-                            Price = 4.00m
+                            Price = 1.00m
                         },
                         new
                         {
                             EntityId = 4L,
                             Name = "Neapolitan",
-                            Price = 4.00m
+                            Price = 1.00m
                         });
                 });
 
@@ -130,6 +132,13 @@ namespace PizzaBox.Storing.Migrations
                     b.HasKey("EntityId");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            EntityId = 5L,
+                            Name = "Abalo"
+                        });
                 });
 
             modelBuilder.Entity("PizzaBox.Domain.Models.Order", b =>
@@ -142,6 +151,9 @@ namespace PizzaBox.Storing.Migrations
                     b.Property<long>("CustomerEntityId")
                         .HasColumnType("bigint");
 
+                    b.Property<long?>("PizzaEntityId")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("StoreEntityId")
                         .HasColumnType("bigint");
 
@@ -151,6 +163,8 @@ namespace PizzaBox.Storing.Migrations
                     b.HasKey("EntityId");
 
                     b.HasIndex("CustomerEntityId");
+
+                    b.HasIndex("PizzaEntityId");
 
                     b.HasIndex("StoreEntityId");
 
@@ -179,19 +193,25 @@ namespace PizzaBox.Storing.Migrations
                         {
                             EntityId = 1L,
                             Name = "Small",
-                            Price = 6.00m
+                            Price = 10.00m
                         },
                         new
                         {
                             EntityId = 2L,
                             Name = "Medium",
-                            Price = 8.00m
+                            Price = 12.00m
                         },
                         new
                         {
                             EntityId = 3L,
                             Name = "Large",
-                            Price = 10.00m
+                            Price = 15.00m
+                        },
+                        new
+                        {
+                            EntityId = 4L,
+                            Name = "Eating Challange(XXXL)",
+                            Price = 250.00m
                         });
                 });
 
@@ -222,31 +242,31 @@ namespace PizzaBox.Storing.Migrations
                         {
                             EntityId = 1L,
                             Name = "peppers",
-                            Price = 1.00m
+                            Price = 0.25m
                         },
                         new
                         {
                             EntityId = 2L,
                             Name = "onions",
-                            Price = 1.00m
+                            Price = 0.25m
                         },
                         new
                         {
                             EntityId = 3L,
                             Name = "olives",
-                            Price = 1.00m
+                            Price = 0.25m
                         },
                         new
                         {
                             EntityId = 4L,
-                            Name = "Pepperoni",
-                            Price = 1.00m
+                            Name = "Mozzarella",
+                            Price = 0.25m
                         },
                         new
                         {
                             EntityId = 5L,
                             Name = "Marinara",
-                            Price = 1.00m
+                            Price = 0.25m
                         });
                 });
 
@@ -330,6 +350,10 @@ namespace PizzaBox.Storing.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("PizzaBox.Domain.Abstracts.APizza", "Pizza")
+                        .WithMany()
+                        .HasForeignKey("PizzaEntityId");
+
                     b.HasOne("PizzaBox.Domain.Abstracts.AStore", "Store")
                         .WithMany("Orders")
                         .HasForeignKey("StoreEntityId")
@@ -337,6 +361,8 @@ namespace PizzaBox.Storing.Migrations
                         .IsRequired();
 
                     b.Navigation("Customer");
+
+                    b.Navigation("Pizza");
 
                     b.Navigation("Store");
                 });

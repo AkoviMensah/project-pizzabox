@@ -4,30 +4,36 @@ using PizzaBox.Domain.Abstracts;
 namespace PizzaBox.Domain.Models.Pizzas
 {
   /// <summary>
-  /// 
+  ///
   /// </summary>
   public class CustomPizza : APizza
   {
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public override void AddCrust(Crust crust = null)
+    protected override void AddName()
     {
-      Crust = new Crust();
+      Name = "Custom Pizza";
+    }
+    protected override void AddCrust()
+    {
+      Crust = new Crust() { Name = "Original" };
+      Crust.Price = 8.00M;
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public override void AddSize(Size size = null)
+    protected override void AddSize()
     {
-      Size = size;
+      Size = new Size("Medium");
+      Size.Price = 2.00M;
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public override void AddToppings(params Topping[] toppings)
+    protected override void AddToppings()
     {
       Toppings = new List<Topping>()
       {

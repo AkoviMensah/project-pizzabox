@@ -7,55 +7,38 @@ using PizzaBox.Domain.Models.Pizzas;
 namespace PizzaBox.Domain.Abstracts
 {
   /// <summary>
-  /// 
+  ///
   /// </summary>
   [XmlInclude(typeof(CustomPizza))]
   [XmlInclude(typeof(MeatPizza))]
   [XmlInclude(typeof(VeggiePizza))]
   public abstract class APizza : AModel
   {
+    public string Name;
     public Crust Crust { get; set; }
     public Size Size { get; set; }
+    public long CrustEntityId { get; set; }
     public long SizeEntityId { get; set; }
     public List<Topping> Toppings { get; set; }
 
-    /// <summary>
-    /// 
-    /// </summary>
     protected APizza()
     {
       Factory();
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     protected virtual void Factory()
     {
+      AddName();
       AddCrust();
       AddSize();
       AddToppings();
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    public abstract void AddCrust(Crust crust = null);
+    protected abstract void AddName();
+    protected abstract void AddCrust();
+    protected abstract void AddSize();
+    protected abstract void AddToppings();
 
-    /// <summary>
-    /// 
-    /// </summary>
-    public abstract void AddSize(Size size = null);
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public abstract void AddToppings(params Topping[] toppings);
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
     public override string ToString()
     {
       var stringBuilder = new StringBuilder();
@@ -66,7 +49,16 @@ namespace PizzaBox.Domain.Abstracts
         stringBuilder.Append($"{item}{separator}");
       }
 
-      return $"{Crust} - {Size} - {stringBuilder.ToString().TrimEnd(separator.ToCharArray())}";
+      return $"{Name} \n\t {Size} - {Crust} - {stringBuilder.ToString().TrimEnd(separator.ToCharArray())} - ${GetPrice()}\n";
+    }
+    public decimal GetPrice()
+    {
+      decimal sum = Crust.Price + Size.Price;
+      foreach (Topping t in Toppings)
+      {
+        sum += t.Price;
+      }
+      return sum;
     }
   }
 }
